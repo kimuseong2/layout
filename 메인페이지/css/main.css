@@ -20,18 +20,33 @@ nav {
     height: 100px;
     font-size: 20px;
     border-bottom: 1px solid #7763;
-    background-color: #F4EBE7;
-
+    background-color: #fefdfb;
 }
 .Hdiv {
     text-align: center;
     height: 150px;
     line-height: 200px;
-    background-color: #F8C8C4;
+    background-image: url("../img/butterfly.png");
+    background-repeat: no-repeat;
+    /* background-color: #fcf3e7; */
 
 }
-
-
+strong span {
+    padding: 10px;
+    font-size: 25px;
+}
+strong span:nth-child(1) {
+    color: #eef31d;
+}
+strong span:nth-child(2) {
+    color: blue;
+}
+strong span:nth-child(3) {
+    color: black;
+}
+strong span:nth-child(4) {
+    color: green;
+}
 
 header > div > nav > ul {
     list-style-type: none;
@@ -40,20 +55,28 @@ header > div > nav > ul {
 header > div > nav > ul > li {
     float: left;
     padding: 0 100px 0 0;
-    margin-top: 20px;
+    margin-top: 40px;
 }
-header > div > nav > ul > li:nth-child(1) {
+header > div > nav > ul > li:nth-child(1),
+header > div > nav > ul > li:nth-child(1):visited
+ {
     padding-left: 100px;
     break-before: always;
+    color: #9866b4;
 }
-header > div > nav > ul > li:nth-last-child(1) {
+header > div > nav > ul > li:nth-last-child(1) ,
+header > div > nav > ul > li:nth-last-child(1):visited 
+{
     float: right;
+    color: #9866b4;
 }
 .menu {
     padding: 10px 20px;
+    color: #9866b4;
 }
 .menu:hover {
     animation: menuFadeOut 1s;
+    color: #9866b4;
 }
 
 @keyframes menuFadeOut {
@@ -113,5 +136,10 @@ footer > div > p {
 .Fdiv {
     position: absolute;
     top: 30px;
+}
+.Fdiv a,
+.Fdiv a:visited
+{
+    color: black;
 }
 

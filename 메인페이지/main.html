@@ -12,27 +12,32 @@
    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' rel='stylesheet' /> 
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>  <!-- fullcalendar 언어 CDN -->  
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
-</head>
+  <link rel="stylesheet" href="bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+  <script src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
 
+</head>
 <body>
     <div class="container">
         <header>
             <div class="Hdiv">
                 <strong>
-                    <a href="#">파레트팡</a>
+                    <span>파</span><span>레</span><span>트</span><span>팡</span>
                 </strong>
             </div>
             <div>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" class="menu">메뉴1</a>
+                            <a href="#" class="menu">홈</a>
                         </li>
                         <li class="menull">
-                            <a href="#" class="menu">메뉴2</a>
+                            <a href="#" class="menu">강좌 목록</a>
                         </li>
                         <li class="menull">
-                            <a href="#" class="menu">메뉴3</a>
+                            <a href="#" class="menu">공지 사항</a>
+                        </li>
+                        <li class="menull">
+                            <a href="#" class="menu">회원권 예약</a>
                         </li>
                         <li>
                             <a href="#">로그인</a>
@@ -42,21 +47,40 @@
             </div>
         </header>
         <section style="   
-         display: flex;
-        justify-content: center;">
-            <div id="calendar" style="width: 950px;"></div>
+        display: flex;
+        flex-direction: column;
+        align-items: center;">
+        <div class="slider" style="width: 100%;">
+            <div>I am a slide.</div>
+            <div>I am another slide.</div>
+        </div>
+        <div id="calendar" style="width: 950px;"></div>
         </section>
         <footer>
             <div class="Fdiv">
                 <ul>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">회원약관</a></li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">회원약관</a>
+                    </li>
                 </ul>
                 <p>Copyright 2022. KWS all right reserved.</p>
             </div>
         </footer>
     </div>
     <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,
+		speed: 500,
+		pause: 4000,
+		mode:'fade',
+		autoControls: true,
+		pager:true,
+      });
+    });
         (function () {
             $(function () {
                 // calendar element 취득      
@@ -106,13 +130,17 @@
                                                       events: [          {            
                                                         title: '종이접기',            
                                                         start: '2022-07-01', 
-                                                        end: '2022-07-06'         
+                                                        end: '2022-07-06' ,
+                                                        color : 'antiquewhite',
+                                                        textColor : 'black'      
                                                     },          {
                                                                     
                                                         title: '엑체괴물',            
                                                         start: '2022-07-07',            
-                                                        end: '2021-07-11'          
-                                                    },       ]      
+                                                        end: '2021-07-11',
+                                                        color : 'antiquewhite' ,
+                                                        textColor : 'black'            
+                                                    },       ]  
                                                 });      // 캘린더 랜더링      
                                                 calendar.render();    
                                             });  
