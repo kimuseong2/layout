@@ -44,11 +44,9 @@ header > div > nav > ul > li:nth-last-child(1) {
     float: right;
 }
 .menu {
-    border: 1px solid #666666;
     padding: 10px 20px;
 }
 .menu:hover {
-    border: 1px solid white;
     animation: menuFadeOut 1s;
 }
 
@@ -68,6 +66,13 @@ header > div > nav > ul > li:nth-last-child(1) {
     position: relative;
     left: -50px;
 }
+/** section **/
+
+section {
+    margin-top: 50px;
+    height: 1120px;
+    max-height: 1120px;
+}
 
 /** footer */
 
@@ -75,7 +80,7 @@ footer {
     height: 150px;
     background-color: antiquewhite;
     color: black;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     max-width: 1140px;
@@ -97,5 +102,10 @@ footer > div > p {
     position: relative;
     left: 50px;
     font-size: 13px;
+}
+
+.Fdiv {
+    position: absolute;
+    top: 30px;
 }
 
