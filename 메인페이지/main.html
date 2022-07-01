@@ -41,9 +41,10 @@
                 </nav>
             </div>
         </header>
-        <section>
-            중단
-            <div id="calendar"></div>
+        <section style="   
+         display: flex;
+        justify-content: center;">
+            <div id="calendar" style="width: 950px;"></div>
         </section>
         <footer>
             <div class="Fdiv">
@@ -78,8 +79,7 @@
                     },
                     initialView: 'dayGridMonth',
                      // 초기 로드 될때 보이는 캘린더 화면(기본 설정: 달)   
-                          initialDate: '2021-07-15', 
-                          // 초기 날짜 설정 (설정하지 않으면 오늘 날짜가 보인다.)   
+                        //   initialDate: '2021-07-15', // 초기 날짜 설정 (설정하지 않으면 오늘 날짜가 보인다.)   
                                navLinks: true, // 날짜를 선택하면 Day 캘린더나 Week 캘린더로 링크 
                                       editable: true, // 수정 가능?        
                                       selectable: true, // 달력 일자 드래그 설정가능        
@@ -104,49 +104,15 @@
                                                         }          calendar.unselect()       
                                                      } ,       // 이벤트        
                                                       events: [          {            
-                                                        title: 'All Day Event',            
-                                                        start: '2021-07-01',          
+                                                        title: '종이접기',            
+                                                        start: '2022-07-01', 
+                                                        end: '2022-07-06'         
                                                     },          {
                                                                     
-                                                        title: 'Long Event',            
-                                                        start: '2021-07-07',            
-                                                        end: '2021-07-10'          
-                                                    },          {            
-                                                        groupId: 999,            
-                                                        title: 'Repeating Event',            
-                                                        start: '2021-07-09T16:00:00'          
-                                                    },          {            
-                                                        groupId: 999,            
-                                                        title: 'Repeating Event',            
-                                                        start: '2021-07-16T16:00:00'          
-                                                    },          {            
-                                                        title: 'Conference',            
-                                                        start: '2021-07-11',            
-                                                        end: '2021-07-13'          
-                                                    },          {            
-                                                        title: 'Meeting',            
-                                                        start: '2021-07-12T10:30:00',            
-                                                        end: '2021-07-12T12:30:00'          
-                                                    },          {            
-                                                        title: 'Lunch',            
-                                                        start: '2021-07-12T12:00:00'          
-                                                    },          {            
-                                                        title: 'Meeting',            
-                                                        start: '2021-07-12T14:30:00'          
-                                                    },          {            
-                                                        title: 'Happy Hour',            
-                                                        start: '2021-07-12T17:30:00'          
-                                                    },          {            
-                                                        title: 'Dinner',            
-                                                        start: '2021-07-12T20:00:00'          
-                                                    },          {            
-                                                        title: 'Birthday Party',            
-                                                        start: '2021-07-13T07:00:00'          
-                                                    },          {            
-                                                        title: 'Click for Google',            
-                                                        url: 'http://google.com/', // 클릭시 해당 url로 이동            
-                                                        start: '2021-07-28'          
-                                                    }        ]      
+                                                        title: '엑체괴물',            
+                                                        start: '2022-07-07',            
+                                                        end: '2021-07-11'          
+                                                    },       ]      
                                                 });      // 캘린더 랜더링      
                                                 calendar.render();    
                                             });  

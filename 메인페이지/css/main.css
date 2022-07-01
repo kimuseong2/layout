@@ -20,12 +20,18 @@ nav {
     height: 100px;
     font-size: 20px;
     border-bottom: 1px solid #7763;
+    background-color: #F4EBE7;
+
 }
 .Hdiv {
     text-align: center;
     height: 150px;
     line-height: 200px;
+    background-color: #F8C8C4;
+
 }
+
+
 
 header > div > nav > ul {
     list-style-type: none;
